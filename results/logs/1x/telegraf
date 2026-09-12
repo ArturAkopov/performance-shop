@@ -1,0 +1,13 @@
+2026-09-11 11:58:33.499 | 2026-09-11T08:58:33Z W! Strict environment variable handling is the new default starting with v1.38.0! If your configuration does not work with strict handling please explicitly add the --non-strict-env-handling flag to switch to the previous behavior!
+2026-09-11 11:58:33.501 | 2026-09-11T08:58:33Z I! Loading config: /etc/telegraf/telegraf.conf
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z I! Starting Telegraf 1.39.3 brought to you by InfluxData the makers of InfluxDB
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z I! Available plugins: 245 inputs, 9 aggregators, 35 processors, 26 parsers, 68 outputs, 8 secret stores
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z I! Loaded inputs: docker
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z I! Loaded aggregators:
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z I! Loaded processors:
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z I! Loaded secretstores:
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z I! Loaded outputs: prometheus_client
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z I! Tags enabled: host=7cbc280a9076
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z I! [agent] Config: Interval:15s, Quiet:false, Hostname:"7cbc280a9076", Flush Interval:15s
+2026-09-11 11:58:33.506 | 2026-09-11T08:58:33Z W! [agent] The default value of 'skip_processors_after_aggregators' will change to 'true' with Telegraf v1.40.0! If you need the current default behavior, please explicitly set the option to 'false'!
+2026-09-11 11:58:33.508 | 2026-09-11T08:58:33Z I! [outputs.prometheus_client] Listening on http://[::]:9273/metrics

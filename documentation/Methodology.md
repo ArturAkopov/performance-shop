@@ -324,12 +324,11 @@ curl http://localhost:9273/metrics | grep docker_container
 | **5. Проведение тестов**   | Запуск тестов стабильности на уровнях 1x, 2x, 3x.                         | `.jtl` файлы           |
 | **6. Мониторинг**          | Сбор метрик CPU, RAM, Network через Grafana.                              | Скриншоты дашбордов    |
 | **7. Анализ**              | Обработка результатов, построение графиков, сравнение с SLO.              | Отчёт                  |
-| **8. Защита**              | Подготовка презентации и финального отчёта.                               | Презентация            |
 
 ## 6.4. Модель нагрузки
 
-Используется **закрытая модель** с фиксированным количеством виртуальных пользователей (VU), управляемых через *
-*Ultimate Thread Group**.
+Используется **закрытая модель** с фиксированным количеством виртуальных пользователей (VU), управляемых через
+**Ultimate Thread Group**.
 
 **Управление нагрузкой осуществляется через:**
 
@@ -442,7 +441,7 @@ curl http://localhost:9273/metrics | grep docker_container
 ```text
 Test Plan: performance_shop.jmx
 │
-├── Переменные окружения (HOST, PORT, PROTOCOL)
+├── Переменные окружения (HOST, PORT, PROTOCOL, TARGET_THROUGHPUT)
 │
 ├── HTTP Request Defaults
 │   ├── Domain = ${HOST}
@@ -457,37 +456,42 @@ Test Plan: performance_shop.jmx
 │
 ├── Ultimate Thread Group (профиль нагрузки)
 │   │
-│   ├── Constant Throughput Timer (Target throughput = ${__P(target_throughput, 3.6)})
+│   ├── Constant Throughput Timer (Target = ${TARGET_THROUGHPUT} samples/min)
 │   ├── Uniform Random Timer (Think Time 500-2000 мс)
 │   │
-│   ├── ThroughputController "45%" → Сценарий А
+│   ├── ThroughputController "45%" → Сценарий А: Просмотр товаров
 │   │   ├── 01 Авторизация (POST /api/auth/login)
-│   │   │   ├── JSON Extractor → TOKEN
+│   │   │   ├── JSON Extractor → TOKEN ($.access_token)
 │   │   │   └── Response Assertion (200)
 │   │   ├── 02 Профиль (GET /api/auth/profile)
-│   │   │   ├── Header: Authorization
+│   │   │   ├── Header: token = ${TOKEN}
 │   │   │   └── Response Assertion (200)
 │   │   ├── 03 Список товаров (GET /api/products)
-│   │   │   ├── Header: Authorization
 │   │   │   └── Response Assertion (200)
 │   │   └── 04 Товар (GET /api/products/{product_id})
-│   │       ├── Header: Authorization
 │   │       └── Response Assertion (200)
 │   │
-│   ├── ThroughputController "20%" → Сценарий Б
+│   ├── ThroughputController "20%" → Сценарий Б: Оформление заказа
 │   │   ├── 01 Авторизация (POST /api/auth/login)
+│   │   │   ├── JSON Extractor → TOKEN ($.access_token)
+│   │   │   └── Response Assertion (200)
 │   │   ├── 02 Профиль (GET /api/auth/profile)
+│   │   │   ├── Header: token = ${TOKEN}
+│   │   │   └── Response Assertion (200)
 │   │   ├── 03 Список товаров (GET /api/products)
+│   │   │   └── Response Assertion (200)
 │   │   ├── 04 Товар (GET /api/products/{product_id})
+│   │   │   └── Response Assertion (200)
 │   │   ├── 05 Создать заказ (POST /api/orders)
-│   │   │   ├── JSON Extractor → ORDER_ID
+│   │   │   ├── JSON Extractor → ORDER_ID ($.order_id)
 │   │   │   └── Response Assertion (200)
 │   │   └── 06 Заказ (GET /api/orders/{ORDER_ID})
-│   │       ├── Header: Authorization
 │   │       └── Response Assertion (200)
 │   │
-│   ├── ThroughputController "30%" → Сценарий В
+│   ├── ThroughputController "30%" → Сценарий В: Отчёты
 │   │   ├── 01 Авторизация (POST /api/auth/login)
+│   │   │   ├── JSON Extractor → TOKEN ($.token)
+│   │   │   └── Response Assertion (200)
 │   │   ├── 02 Отчёт sales (GET /api/reports/sales)
 │   │   │   └── Response Assertion (200)
 │   │   ├── 03 Отчёт slow (GET /api/reports/slow?delay=3)
@@ -495,11 +499,11 @@ Test Plan: performance_shop.jmx
 │   │   └── 04 Генерация отчёта (POST /api/reports/generate?period=month)
 │   │       └── Response Assertion (200)
 │   │
-│   └── ThroughputController "5%" → Сценарий Г
+│   └── ThroughputController "5%" → Сценарий Г: Healthcheck
 │       └── 01 Healthcheck (GET /api/health)
 │           └── Response Assertion (200)
 │
-└── Backend Listener (опционально, для InfluxDB)
+└── Result Collector (View Results Tree)
 ```
 
 ## 8.3. Запуск JMeter
@@ -508,14 +512,14 @@ Test Plan: performance_shop.jmx
 # Smoke Test (1 поток, 1 итерация)
 jmeter -t scripts/performance_shop.jmx
 
-# 1x (0.06 RPS) — 2 потока, 3.6 запросов/мин, 2 часа
-jmeter -n -t scripts/performance_shop.jmx -l results/logs/run_1x.jtl -e -o results/reports/1x -Jhost=localhost -Jport=80 -Jtarget_throughput=3.6
+# 1x (0.06 RPS) — 3 потока, 3.6 запросов/мин, 2 часа
+jmeter -n -t scripts/performance_shop.jmx -l results/logs/1x/run_1x.jtl -e -o results/reports/1x -Jhost=localhost -Jport=80 -Jtarget_throughput=3.6
 
-# 2x (0.12 RPS) — 2 потока, 7.2 запросов/мин, 2 часа
-jmeter -n -t scripts/performance_shop.jmx -l results/logs/run_2x.jtl -e -o results/reports/2x -Jhost=localhost -Jport=80 -Jtarget_throughput=7.2
+# 2x (0.12 RPS) — 3 потока, 7.2 запросов/мин, 2 часа
+jmeter -n -t scripts/performance_shop.jmx -l results/logs/2x/run_2x.jtl -e -o results/reports/2x -Jhost=localhost -Jport=80 -Jtarget_throughput=7.2
 
 # 3x (0.18 RPS) — 3 потока, 10.8 запросов/мин, 2 часа
-jmeter -n -t scripts/performance_shop.jmx -l results/logs/run_3x.jtl -e -o results/reports/3x -Jhost=localhost -Jport=80 -Jtarget_throughput=10.8
+jmeter -n -t scripts/performance_shop.jmx -l results/logs/3x/run_3x.jtl -e -o results/reports/3x -Jhost=localhost -Jport=80 -Jtarget_throughput=10.8
 ```
 
 **Изменение уровня нагрузки:** Для изменения RPS достаточно изменить параметр `target_throughput` при запуске (
@@ -599,16 +603,17 @@ curl http://localhost/api/health
 
 # 11. Результаты и артефакты
 
-| Этап       | Артефакт                           | Формат                           |
-|------------|------------------------------------|----------------------------------|
-| Анализ     | Методика нагрузочного тестирования | `documentation/Methodology.md`   |
-| Разработка | Скрипт JMeter                      | `scripts/performance_shop.jmx`   |
-| Разработка | Тестовые данные (пользователи)     | `scripts/users.csv`              |
-| Разработка | Тестовые данные (товары)           | `scripts/products.csv`           |
-| Проведение | Лог-файлы результатов              | `results/logs/run_*.jtl`         |
-| Анализ     | HTML-отчёты JMeter                 | `results/reports/*/index.html`   |
-| Анализ     | Скриншоты Grafana                  | `results/reports/screenshots/`   |
-| Анализ     | Выводы и рекомендации              | `results/reports/conclusions.md` |
+| Этап       | Артефакт                           | Формат                                    |
+|------------|------------------------------------|-------------------------------------------|
+| Анализ     | Методика нагрузочного тестирования | `documentation/Methodology.md`            |
+| Разработка | Скрипт JMeter                      | `scripts/performance_shop.jmx`            |
+| Разработка | Тестовые данные (пользователи)     | `scripts/users.csv`                       |
+| Разработка | Тестовые данные (товары)           | `scripts/products.csv`                    |
+| Разработка | Скрипт запуска тестов              | `scripts/run_tests.bat`                   |
+| Проведение | Лог-файлы результатов (1x, 2x, 3x) | `results/logs/{1x,2x,3x}/run_*.jtl`       |
+| Анализ     | HTML-отчёты JMeter                 | `results/reports/{1x,2x,3x}/index.html`   |
+| Анализ     | Скриншоты Grafana                  | `results/reports/screenshots/{1x,2x,3x}/` |
+| Анализ     | Выводы и рекомендации              | `results/reports/conclusions.md`          |
 
 ---
 

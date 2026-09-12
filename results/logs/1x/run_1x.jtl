@@ -1,0 +1,879 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1789117473155,63,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,1,1,http://localhost/api/auth/login,63,0,16
+1789117472377,63,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,1,1,null,63,799,16
+1789117490154,16,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,1,1,http://localhost/api/auth/profile,16,0,0
+1789117473240,16,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,1,1,null,16,16915,0
+1789117502985,19,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,19,0,2
+1789117502378,19,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,19,609,2
+1789117506879,12,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,12,0,0
+1789117490170,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,12,16709,0
+1789117536902,5,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,5,0,0
+1789117503006,5,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,5,33897,0
+1789117540988,11,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,406,158,2,2,http://localhost/api/products/2,11,0,2
+1789117506892,11,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,406,158,2,2,null,11,34096,2
+1789117570636,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,1
+1789117536908,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,33728,1
+1789117573132,18,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,18,0,0
+1789117541000,18,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,18,32133,0
+1789117604324,22,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,408,158,2,2,http://localhost/api/products/3,22,0,0
+1789117570647,22,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,408,158,2,2,null,22,33678,0
+1789117607093,2526,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1477,161,2,2,http://localhost/api/reports/sales,2526,0,3
+1789117573150,2526,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1477,161,2,2,null,2526,33944,3
+1789117636869,18,POST /api/orders,200,OK,Users 1-1,text,true,,228,204,2,2,http://localhost/api/orders,18,0,1
+1789117604347,18,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,228,204,2,2,null,18,32523,1
+1789117639819,3019,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3019,0,0
+1789117609620,3019,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3019,30200,0
+1789117670446,24,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,361,158,2,2,http://localhost/api/orders/201,24,0,0
+1789117636888,24,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,361,158,2,2,null,24,33559,0
+1789117672898,5006,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,5006,0,3
+1789117642839,5006,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,5006,30060,3
+1789117703587,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,3
+1789117670474,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,33112,3
+1789117707501,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789117677906,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,29594,1
+1789117736335,9,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,9,0,0
+1789117703600,9,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,9,32736,0
+1789117740759,5,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,5,0,0
+1789117707514,5,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,5,33249,0
+1789117770501,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,12,0,2
+1789117736344,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,12,34159,2
+1789117774335,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789117740767,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,33569,1
+1789117802983,26,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,412,158,2,2,http://localhost/api/products/4,25,0,0
+1789117770515,26,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,412,158,2,2,null,25,32470,0
+1789117806925,10,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,373,158,2,2,http://localhost/api/products/6,10,0,0
+1789117774346,10,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,373,158,2,2,null,10,32580,0
+1789117836658,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789117803013,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,33645,2
+1789117840913,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789117806936,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,33978,2
+1789117871009,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789117836671,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,34338,0
+1789117874140,2528,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1478,161,2,2,http://localhost/api/reports/sales,2528,0,0
+1789117840926,2528,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1478,161,2,2,null,2528,33215,0
+1789117902931,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789117871028,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,31904,2
+1789117907450,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,1
+1789117876669,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3005,30781,1
+1789117936633,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,381,158,2,2,http://localhost/api/products/8,23,0,0
+1789117902943,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,381,158,2,2,null,23,33690,0
+1789117940961,5019,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,5019,0,0
+1789117910455,5019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,5019,30506,0
+1789117969807,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789117936657,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,33150,2
+1789117973659,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,10,0,2
+1789117945981,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,10,27678,2
+1789118003744,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789117969819,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,33925,0
+1789118006799,2527,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1478,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789117973670,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1478,161,2,2,null,2527,33130,0
+1789118036680,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,3
+1789118003763,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,32918,3
+1789118040254,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,2
+1789118009327,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3005,30929,2
+1789118070668,25,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,381,158,2,2,http://localhost/api/products/8,24,0,0
+1789118036692,25,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,381,158,2,2,null,24,33977,0
+1789118073918,3020,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,3020,0,0
+1789118043262,3020,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,3020,30657,0
+1789118103730,13,POST /api/orders,200,OK,Users 1-1,text,true,,228,204,2,2,http://localhost/api/orders,13,0,2
+1789118070694,13,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,228,204,2,2,null,13,33038,2
+1789118106351,10,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,10,0,1
+1789118076940,10,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,10,29411,1
+1789118136360,29,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,352,158,2,2,http://localhost/api/orders/202,29,0,0
+1789118103745,29,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,352,158,2,2,null,29,32615,0
+1789118139881,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789118106361,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,33520,0
+1789118169818,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789118136390,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,33429,2
+1789118173934,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789118139901,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,34033,2
+1789118203656,2515,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1479,161,2,2,http://localhost/api/reports/sales,2515,0,0
+1789118169831,2515,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1479,161,2,2,null,2515,33826,0
+1789118206524,10,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,392,158,2,2,http://localhost/api/products/1,10,0,0
+1789118173946,10,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,392,158,2,2,null,10,32578,0
+1789118236262,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,2
+1789118206172,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3005,30091,2
+1789118240592,3,GET /api/health,200,OK,Users 1-2,text,true,,233,154,2,2,http://localhost/api/health,3,0,1
+1789118206534,3,01 Healthcheck,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,154,2,2,null,3,34059,1
+1789118274155,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789118240598,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33557,1
+1789118270435,7005,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7005,0,0
+1789118239268,7005,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,7005,31168,0
+1789118303327,13,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,13,0,1
+1789118277441,13,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,13,25886,1
+1789118307512,11,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,11,0,0
+1789118274166,11,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,11,33346,0
+1789118337663,17,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,17,0,0
+1789118303341,17,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,17,34323,0
+1789118339845,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789118307523,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,32322,2
+1789118369590,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789118337681,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,31910,2
+1789118373907,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,408,158,2,2,http://localhost/api/products/3,24,0,0
+1789118339856,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,408,158,2,2,null,24,34052,0
+1789118403476,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,393,158,2,2,http://localhost/api/products/5,24,0,0
+1789118369601,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,393,158,2,2,null,24,33875,0
+1789118407447,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789118373933,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33515,2
+1789118437229,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789118403501,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33728,1
+1789118440082,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789118407459,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,32623,0
+1789118469968,2526,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1479,161,2,2,http://localhost/api/reports/sales,2526,0,0
+1789118437241,2526,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1479,161,2,2,null,2526,32728,0
+1789118474022,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789118440101,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,33921,2
+1789118506752,27,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,408,158,2,2,http://localhost/api/products/3,27,0,0
+1789118474033,27,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,408,158,2,2,null,27,32719,0
+1789118504077,3008,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3008,0,2
+1789118472495,3008,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3008,31582,2
+1789118540078,17,POST /api/orders,200,OK,Users 1-2,text,true,,228,204,2,2,http://localhost/api/orders,17,0,1
+1789118506779,17,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,228,204,2,2,null,17,33299,1
+1789118537310,6019,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,6019,0,0
+1789118507085,6019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,6019,30225,0
+1789118570997,15,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,15,0,2
+1789118543330,15,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,15,27667,2
+1789118574200,26,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,361,158,2,2,http://localhost/api/orders/203,26,0,0
+1789118540095,26,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,361,158,2,2,null,26,34105,0
+1789118603664,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789118571013,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,32653,0
+1789118607627,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789118574227,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33401,1
+1789118636731,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789118603684,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,33047,1
+1789118640528,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789118607639,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,32891,0
+1789118669655,25,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,372,158,2,2,http://localhost/api/products/7,25,0,0
+1789118636742,25,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,372,158,2,2,null,25,32915,0
+1789118674205,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789118640548,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,33659,2
+1789118703125,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789118669681,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33445,2
+1789118706972,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,381,158,2,2,http://localhost/api/products/8,24,0,0
+1789118674217,24,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,381,158,2,2,null,24,32755,0
+1789118736304,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789118703139,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,33165,0
+1789118739937,17,POST /api/orders,200,OK,Users 1-2,text,true,,228,204,2,2,http://localhost/api/orders,17,0,2
+1789118706996,17,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,228,204,2,2,null,17,32942,2
+1789118769873,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,1
+1789118736323,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,33550,1
+1789118774253,26,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,352,158,2,2,http://localhost/api/orders/204,26,0,0
+1789118739955,26,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,352,158,2,2,null,26,34298,0
+1789118803575,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,401,158,2,2,http://localhost/api/products/9,24,0,0
+1789118769884,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,401,158,2,2,null,24,33691,0
+1789118807036,10,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,10,0,1
+1789118774281,10,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,10,32756,1
+1789118837206,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789118803599,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,33607,2
+1789118840190,17,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,17,0,0
+1789118807047,17,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,17,33144,0
+1789118870604,2526,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1468,161,2,2,http://localhost/api/reports/sales,2526,0,0
+1789118837218,2526,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1468,161,2,2,null,2526,33386,0
+1789118873442,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789118840208,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,33234,2
+1789118903537,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,1
+1789118873130,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3005,30407,1
+1789118907354,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,406,158,2,2,http://localhost/api/products/2,24,0,0
+1789118873453,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,406,158,2,2,null,24,33901,0
+1789118941026,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789118907378,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33650,2
+1789118937362,7019,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7019,0,0
+1789118906543,7019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,7019,30819,0
+1789118969993,10,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,10,0,1
+1789118944381,10,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,10,25614,1
+1789118973513,2527,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1468,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789118941039,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1468,161,2,2,null,2527,32474,0
+1789119004361,17,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,17,0,0
+1789118970005,17,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,17,34358,0
+1789119006233,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,3
+1789118976040,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3005,30194,3
+1789119036561,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,12,0,2
+1789119004380,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,12,32181,2
+1789119039691,3019,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,3019,0,0
+1789119009239,3019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,3019,30452,0
+1789119071041,25,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,408,158,2,2,http://localhost/api/products/3,25,0,0
+1789119036573,25,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,408,158,2,2,null,25,34468,0
+1789119074163,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,1
+1789119042711,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,31452,1
+1789119103788,19,POST /api/orders,200,OK,Users 1-1,text,true,,228,204,2,2,http://localhost/api/orders,19,0,2
+1789119071066,19,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,228,204,2,2,null,19,32722,2
+1789119106874,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789119074175,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,32699,0
+1789119137665,26,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,361,158,2,2,http://localhost/api/orders/205,26,0,0
+1789119103807,26,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,361,158,2,2,null,26,33858,0
+1789119139552,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789119106894,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,32658,2
+1789119170512,13,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,13,0,2
+1789119137692,13,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,13,32820,2
+1789119173529,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,412,158,2,2,http://localhost/api/products/4,24,0,0
+1789119139563,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,412,158,2,2,null,24,33966,0
+1789119203961,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789119170525,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,33437,0
+1789119207328,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789119173554,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33774,2
+1789119236434,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,12,0,2
+1789119203980,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,12,32454,2
+1789119240312,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789119207340,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,32974,0
+1789119270945,25,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,373,158,2,2,http://localhost/api/products/6,25,0,0
+1789119236446,25,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,373,158,2,2,null,25,34500,0
+1789119273137,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789119240332,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,32805,1
+1789119302875,14,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,14,0,1
+1789119270971,14,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,14,31906,1
+1789119307693,23,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,381,158,2,2,http://localhost/api/products/8,23,0,0
+1789119273148,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,381,158,2,2,null,23,34546,0
+1789119336313,2527,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1459,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789119302891,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1459,161,2,2,null,2527,33423,0
+1789119340881,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789119307717,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,33165,2
+1789119369630,3006,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3006,0,2
+1789119338841,3006,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3006,30789,2
+1789119374185,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789119340894,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33292,0
+1789119407180,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789119374204,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,32976,1
+1789119403180,5007,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,5007,0,0
+1789119372636,5007,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,5007,30543,0
+1789119437118,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789119408186,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,28933,2
+1789119439881,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,381,158,2,2,http://localhost/api/products/8,24,0,0
+1789119407190,24,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,381,158,2,2,null,24,32691,0
+1789119469842,2529,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1459,161,2,2,http://localhost/api/reports/sales,2529,0,0
+1789119437131,2529,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1459,161,2,2,null,2529,32711,0
+1789119473132,16,POST /api/orders,200,OK,Users 1-2,text,true,,227,204,2,2,http://localhost/api/orders,16,0,3
+1789119439905,16,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,227,204,2,2,null,16,33227,3
+1789119503064,3008,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3007,0,3
+1789119472371,3008,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3007,30693,3
+1789119507332,24,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,351,158,2,2,http://localhost/api/orders/206,24,0,0
+1789119473148,24,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,351,158,2,2,null,24,34185,0
+1789119540383,14,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,14,0,3
+1789119507358,14,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,14,33026,3
+1789119537494,7019,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7019,0,0
+1789119506072,7019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,7019,31423,0
+1789119570935,13,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,13,0,2
+1789119544514,13,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,13,26422,2
+1789119574167,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789119540398,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,33770,0
+1789119603694,2529,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1468,161,2,2,http://localhost/api/reports/sales,2529,0,0
+1789119570949,2529,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1468,161,2,2,null,2529,32746,0
+1789119607561,13,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,13,0,3
+1789119574187,13,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,13,33374,3
+1789119636438,3006,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3006,0,1
+1789119606224,3006,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3006,30214,1
+1789119639921,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,392,158,2,2,http://localhost/api/products/1,24,0,0
+1789119607574,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,392,158,2,2,null,24,32347,0
+1789119672906,5,GET /api/health,200,OK,Users 1-2,text,true,,233,154,2,2,http://localhost/api/health,5,0,2
+1789119639945,5,01 Healthcheck,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,154,2,2,null,5,32961,2
+1789119670013,6021,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,6021,0,0
+1789119639444,6021,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,6021,30570,0
+1789119703534,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789119676036,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,27499,2
+1789119706394,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789119672911,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33483,2
+1789119737517,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789119703547,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,33971,0
+1789119740410,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789119706406,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,34004,0
+1789119769803,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,12,0,2
+1789119737536,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,12,32268,2
+1789119774191,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,1
+1789119740429,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,33762,1
+1789119803465,25,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,393,158,2,2,http://localhost/api/products/5,24,0,0
+1789119769816,25,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,393,158,2,2,null,24,33649,0
+1789119807250,23,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,408,158,2,2,http://localhost/api/products/3,23,0,0
+1789119774202,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,408,158,2,2,null,23,33048,0
+1789119836862,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789119803490,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,33372,2
+1789119840828,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,1
+1789119807273,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,33558,1
+1789119870689,2527,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1468,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789119836874,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1468,161,2,2,null,2527,33817,0
+1789119873963,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789119840843,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33121,0
+1789119902917,3006,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3006,0,3
+1789119873219,3006,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3006,29700,3
+1789119906300,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,1
+1789119873982,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,32318,1
+1789119939673,25,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,408,158,2,2,http://localhost/api/products/3,25,0,0
+1789119906311,25,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,408,158,2,2,null,25,33363,0
+1789119936606,7019,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7019,0,0
+1789119905925,7019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,7019,30681,0
+1789119970053,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789119943626,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,26428,2
+1789119973650,18,POST /api/orders,200,OK,Users 1-2,text,true,,228,204,2,2,http://localhost/api/orders,18,0,2
+1789119939699,18,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,228,204,2,2,null,18,33951,2
+1789120004001,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789119970066,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,33935,0
+1789120006570,26,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,361,158,2,2,http://localhost/api/orders/207,26,0,0
+1789119973668,26,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,361,158,2,2,null,26,32902,0
+1789120036419,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789120004020,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,32399,2
+1789120040101,14,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,13,0,1
+1789120006597,14,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,13,33504,1
+1789120070375,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,372,158,2,2,http://localhost/api/products/7,24,0,0
+1789120036431,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,372,158,2,2,null,24,33945,0
+1789120073497,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789120040115,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33382,0
+1789120103985,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789120070400,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33586,2
+1789120107417,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789120073515,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,33903,2
+1789120136355,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789120103997,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,32359,0
+1789120140041,25,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,381,158,2,2,http://localhost/api/products/8,25,0,0
+1789120107428,25,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,381,158,2,2,null,25,32615,0
+1789120170794,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,12,0,2
+1789120136374,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,12,34421,2
+1789120173234,14,POST /api/orders,200,OK,Users 1-2,text,true,,228,204,2,2,http://localhost/api/orders,14,0,2
+1789120140068,14,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,228,204,2,2,null,14,33166,2
+1789120203829,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,401,158,2,2,http://localhost/api/products/9,24,0,0
+1789120170807,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,401,158,2,2,null,24,33024,0
+1789120206523,26,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,352,158,2,2,http://localhost/api/orders/208,26,0,0
+1789120173249,26,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,352,158,2,2,null,26,33274,0
+1789120237392,16,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,16,0,4
+1789120203855,16,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,16,33536,4
+1789120239770,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789120206551,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33218,1
+1789120269940,2527,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1479,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789120237408,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1479,161,2,2,null,2527,32533,0
+1789120273103,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789120239781,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33323,0
+1789120303574,3006,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3006,0,2
+1789120272467,3006,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3006,31107,2
+1789120306652,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789120273121,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,33531,1
+1789120339819,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,406,158,2,2,http://localhost/api/products/2,24,0,0
+1789120306662,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,406,158,2,2,null,24,33157,0
+1789120336943,5019,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,5019,0,0
+1789120306581,5019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,5019,30362,0
+1789120369634,14,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,14,0,2
+1789120341963,14,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,14,27671,2
+1789120374343,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789120339843,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,34501,1
+1789120403039,20,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,20,0,0
+1789120369648,20,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,20,33391,0
+1789120407485,2527,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1479,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789120374355,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1479,161,2,2,null,2527,33132,0
+1789120436693,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,3
+1789120403059,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,33635,3
+1789120440405,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,2
+1789120410014,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3005,30392,2
+1789120470402,25,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,408,158,2,2,http://localhost/api/products/3,25,0,0
+1789120436705,25,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,408,158,2,2,null,25,33698,0
+1789120474202,6019,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,6019,0,0
+1789120443412,6019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,6019,30790,0
+1789120503870,18,POST /api/orders,200,OK,Users 1-1,text,true,,228,204,2,2,http://localhost/api/orders,18,0,2
+1789120470428,18,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,228,204,2,2,null,18,33444,2
+1789120506190,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,1
+1789120480222,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,25969,1
+1789120537024,27,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,361,158,2,2,http://localhost/api/orders/209,26,0,0
+1789120503890,27,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,361,158,2,2,null,26,33134,0
+1789120540282,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789120506203,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,34079,0
+1789120571019,13,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,13,0,3
+1789120537052,13,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,13,33968,3
+1789120573149,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,1
+1789120540301,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,32848,1
+1789120603199,21,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,21,0,0
+1789120571033,21,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,21,32165,0
+1789120607513,27,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,412,158,2,2,http://localhost/api/products/4,27,0,0
+1789120573160,27,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,412,158,2,2,null,27,34353,0
+1789120637629,13,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,13,0,3
+1789120603220,13,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,13,34410,3
+1789120640145,14,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,13,0,1
+1789120607541,14,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,13,32604,1
+1789120670984,26,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,373,158,2,2,http://localhost/api/products/6,26,0,0
+1789120637642,26,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,373,158,2,2,null,26,33342,0
+1789120673986,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789120640160,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33826,0
+1789120703130,13,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,13,0,2
+1789120671010,13,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,13,32121,2
+1789120706459,12,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,12,0,1
+1789120674004,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,12,32455,1
+1789120737139,2531,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1478,161,2,2,http://localhost/api/reports/sales,2531,0,0
+1789120703144,2531,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1478,161,2,2,null,2531,33996,0
+1789120740400,27,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,381,158,2,2,http://localhost/api/products/8,27,0,0
+1789120706471,27,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,381,158,2,2,null,27,33931,0
+1789120769933,3006,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3006,0,2
+1789120739671,3006,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3006,30263,2
+1789120773180,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789120740429,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,32751,2
+1789120807002,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789120773192,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,33810,0
+1789120803589,7019,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7019,0,0
+1789120772940,7019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,7019,30650,0
+1789120836884,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789120810610,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,26275,2
+1789120840584,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789120807021,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,33564,1
+1789120870133,2515,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1478,161,2,2,http://localhost/api/reports/sales,2515,0,0
+1789120836897,2515,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1478,161,2,2,null,2515,33237,0
+1789120874063,25,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,381,158,2,2,http://localhost/api/products/8,25,0,0
+1789120840595,25,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,381,158,2,2,null,25,33468,0
+1789120902914,3007,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3007,0,2
+1789120872649,3007,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3007,30265,2
+1789120906450,16,POST /api/orders,200,OK,Users 1-2,text,true,,228,204,2,2,http://localhost/api/orders,16,0,2
+1789120874088,16,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,228,204,2,2,null,16,32363,2
+1789120940889,27,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,352,158,2,2,http://localhost/api/orders/210,27,0,0
+1789120906467,27,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,352,158,2,2,null,27,34422,0
+1789120937556,7019,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7019,0,0
+1789120905921,7019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,7019,31635,0
+1789120970052,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789120944576,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,25476,2
+1789120973433,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789120940917,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,32516,1
+1789121002901,2529,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1477,161,2,2,http://localhost/api/reports/sales,2529,0,0
+1789120970064,2529,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1477,161,2,2,null,2529,32838,0
+1789121006798,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789120973444,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,33354,0
+1789121036792,3007,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3007,0,2
+1789121005431,3007,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3007,31362,2
+1789121039925,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789121006817,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,33108,2
+1789121074054,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,392,158,2,2,http://localhost/api/products/1,24,0,0
+1789121039937,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,392,158,2,2,null,24,34119,0
+1789121070358,4018,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,4018,0,0
+1789121039800,4018,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,4018,30559,0
+1789121103839,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789121074377,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,29464,2
+1789121107364,4,GET /api/health,200,OK,Users 1-2,text,true,,233,154,2,2,http://localhost/api/health,4,0,1
+1789121074080,4,01 Healthcheck,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,154,2,2,null,4,33285,1
+1789121136820,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789121103854,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,32966,0
+1789121140987,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789121107370,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33617,2
+1789121170781,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789121136838,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,33943,1
+1789121174089,20,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,20,0,0
+1789121140998,20,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,20,33091,0
+1789121204278,25,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,408,158,2,2,http://localhost/api/products/3,25,0,0
+1789121170791,25,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,408,158,2,2,null,25,33487,0
+1789121206631,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789121174109,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,32522,2
+1789121237082,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789121204304,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,32778,2
+1789121240949,23,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,393,158,2,2,http://localhost/api/products/5,23,0,0
+1789121206641,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,393,158,2,2,null,23,34309,0
+1789121270888,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789121237094,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,33794,0
+1789121273457,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789121240973,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,32484,2
+1789121302895,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789121270907,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,31988,1
+1789121307187,2527,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1477,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789121273468,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1477,161,2,2,null,2527,33719,0
+1789121336613,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,408,158,2,2,http://localhost/api/products/3,24,0,0
+1789121302906,24,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,408,158,2,2,null,24,33707,0
+1789121339670,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,2
+1789121309714,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3005,29957,2
+1789121370524,13,POST /api/orders,200,OK,Users 1-1,text,true,,228,204,2,2,http://localhost/api/orders,13,0,2
+1789121336637,13,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,228,204,2,2,null,13,33889,2
+1789121374087,7017,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7017,0,0
+1789121342676,7017,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,7017,31412,0
+1789121403782,26,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,361,158,2,2,http://localhost/api/orders/211,26,0,0
+1789121370539,26,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,361,158,2,2,null,26,33245,0
+1789121406847,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,3
+1789121381105,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,25743,3
+1789121437401,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789121403811,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33590,1
+1789121440723,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789121406860,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33863,0
+1789121469890,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789121437412,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,32478,0
+1789121474039,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789121440741,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,33299,2
+1789121502946,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789121469908,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,33039,2
+1789121506522,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,372,158,2,2,http://localhost/api/products/7,24,0,0
+1789121474050,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,372,158,2,2,null,24,32472,0
+1789121537126,23,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,381,158,2,2,http://localhost/api/products/8,23,0,0
+1789121502957,23,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,381,158,2,2,null,23,34170,0
+1789121540834,13,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,13,0,2
+1789121506546,13,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,13,34289,2
+1789121569542,13,POST /api/orders,200,OK,Users 1-1,text,true,,228,204,2,2,http://localhost/api/orders,13,0,2
+1789121537149,13,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,228,204,2,2,null,13,32393,2
+1789121574240,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789121540848,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33392,0
+1789121603534,24,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,352,158,2,2,http://localhost/api/orders/212,24,0,0
+1789121569556,24,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,352,158,2,2,null,24,33978,0
+1789121607018,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789121574258,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,32760,2
+1789121636712,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789121603560,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33153,2
+1789121640962,23,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,401,158,2,2,http://localhost/api/products/9,23,0,0
+1789121607029,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,401,158,2,2,null,23,33934,0
+1789121670597,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789121636724,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,33874,0
+1789121673525,381,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,381,0,371
+1789121640986,381,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,381,32540,371
+1789121702922,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789121670617,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,32307,2
+1789121706308,2527,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1469,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789121673907,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1469,161,2,2,null,2527,32402,0
+1789121736680,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,406,158,2,2,http://localhost/api/products/2,23,0,0
+1789121702934,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,406,158,2,2,null,23,33746,0
+1789121740163,3007,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3006,0,3
+1789121708836,3007,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3006,31327,3
+1789121770905,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,3
+1789121736704,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,34201,3
+1789121773706,7018,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7018,0,0
+1789121743170,7018,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,7018,30536,0
+1789121803391,2529,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1469,161,2,2,http://localhost/api/reports/sales,2529,0,0
+1789121770917,2529,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1469,161,2,2,null,2529,32474,0
+1789121806945,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789121780725,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,26220,1
+1789121840477,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789121806956,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,33520,0
+1789121837655,3004,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3004,0,2
+1789121805920,3004,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3004,31735,2
+1789121873840,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,3
+1789121840496,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,33346,3
+1789121869647,6018,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,6018,0,0
+1789121840660,6018,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,6018,28988,0
+1789121904143,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789121875667,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,28477,2
+1789121906943,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,408,158,2,2,http://localhost/api/products/3,24,0,0
+1789121873852,24,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,408,158,2,2,null,24,33091,0
+1789121936744,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789121904155,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,32589,0
+1789121939695,14,POST /api/orders,200,OK,Users 1-2,text,true,,228,204,2,2,http://localhost/api/orders,14,0,3
+1789121906967,14,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,228,204,2,2,null,14,32729,3
+1789121970709,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789121936763,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,33948,2
+1789121973293,25,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,361,158,2,2,http://localhost/api/orders/213,25,0,0
+1789121939710,25,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,361,158,2,2,null,25,33583,0
+1789122003400,23,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,412,158,2,2,http://localhost/api/products/4,23,0,0
+1789121970722,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,412,158,2,2,null,23,32680,0
+1789122007658,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,3
+1789121973319,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,34340,3
+1789122036968,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,10,0,1
+1789122003426,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,10,33542,1
+1789122040412,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789122007671,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,32741,0
+1789122070655,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789122036979,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,33676,0
+1789122073610,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789122040431,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,33179,2
+1789122103131,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789122070674,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,32457,2
+1789122107521,23,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,373,158,2,2,http://localhost/api/products/6,23,0,0
+1789122073621,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,373,158,2,2,null,23,33901,0
+1789122136357,23,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,381,158,2,2,http://localhost/api/products/8,23,0,0
+1789122103141,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,381,158,2,2,null,23,33216,0
+1789122140658,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,3
+1789122107545,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,33114,3
+1789122170967,13,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,13,0,3
+1789122136381,13,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,13,34586,3
+1789122173330,2528,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1469,161,2,2,http://localhost/api/reports/sales,2528,0,0
+1789122140671,2528,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1469,161,2,2,null,2528,32660,0
+1789122202910,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789122170980,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,31930,0
+1789122206784,3007,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3007,0,3
+1789122175859,3007,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3007,30925,3
+1789122236548,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789122202929,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,33619,2
+1789122240341,5019,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,5019,0,0
+1789122209791,5019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,5019,30553,0
+1789122270001,25,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,381,158,2,2,http://localhost/api/products/8,25,0,0
+1789122236559,25,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,381,158,2,2,null,25,33444,0
+1789122273400,12,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,3
+1789122245364,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,12,28037,3
+1789122303534,18,POST /api/orders,200,OK,Users 1-1,text,true,,227,204,2,2,http://localhost/api/orders,18,0,3
+1789122270028,18,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,227,204,2,2,null,18,33508,3
+1789122307635,2527,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1479,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789122273413,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1479,161,2,2,null,2527,34222,0
+1789122337558,24,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,351,158,2,2,http://localhost/api/orders/214,24,0,0
+1789122303554,24,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,351,158,2,2,null,24,34005,0
+1789122340305,3006,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3006,0,2
+1789122310163,3006,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3006,30142,2
+1789122370237,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789122337585,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,32652,2
+1789122373374,7018,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7018,0,0
+1789122343311,7018,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,7018,30063,0
+1789122403520,20,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789122370249,20,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,33271,0
+1789122406928,10,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,10,0,2
+1789122380392,10,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,10,26537,2
+1789122436235,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789122403540,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,32695,2
+1789122440534,2528,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1479,161,2,2,http://localhost/api/reports/sales,2528,0,0
+1789122406939,2528,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1479,161,2,2,null,2528,33595,0
+1789122470678,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,392,158,2,2,http://localhost/api/products/1,24,0,0
+1789122436245,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,392,158,2,2,null,24,34433,0
+1789122473532,3004,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3004,0,1
+1789122443062,3004,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3004,30471,1
+1789122503775,4,GET /api/health,200,OK,Users 1-1,text,true,,233,154,2,2,http://localhost/api/health,4,0,2
+1789122470702,4,01 Healthcheck,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,154,2,2,null,4,33074,2
+1789122507144,5018,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,5018,0,0
+1789122476537,5018,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,5018,30609,0
+1789122536819,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,3
+1789122503781,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,33038,3
+1789122540485,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789122512164,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,28323,2
+1789122570230,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789122536831,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,33401,0
+1789122573558,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789122540498,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,33060,0
+1789122603119,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,12,0,3
+1789122570250,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,12,32870,3
+1789122607457,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789122573577,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,33880,2
+1789122636726,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,408,158,2,2,http://localhost/api/products/3,24,0,0
+1789122603132,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,408,158,2,2,null,24,33594,0
+1789122640047,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,393,158,2,2,http://localhost/api/products/5,24,0,0
+1789122607468,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,393,158,2,2,null,24,32579,0
+1789122669993,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789122636750,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33244,2
+1789122673809,9,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,9,0,1
+1789122640072,9,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,9,33738,1
+1789122703891,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789122670005,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,33886,0
+1789122707135,2526,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1479,161,2,2,http://localhost/api/reports/sales,2526,0,0
+1789122673819,2526,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1479,161,2,2,null,2526,33317,0
+1789122737185,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,12,0,2
+1789122703909,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,12,33276,2
+1789122740726,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,1
+1789122709662,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3005,31065,1
+1789122770518,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,408,158,2,2,http://localhost/api/products/3,24,0,0
+1789122737197,24,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,408,158,2,2,null,24,33321,0
+1789122773141,4020,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,4020,0,0
+1789122743732,4020,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,4020,29409,0
+1789122803293,14,POST /api/orders,200,OK,Users 1-1,text,true,,228,204,2,2,http://localhost/api/orders,14,0,2
+1789122770542,14,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,228,204,2,2,null,14,32752,2
+1789122807374,10,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,10,0,1
+1789122777161,10,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,10,30213,1
+1789122836491,25,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,361,158,2,2,http://localhost/api/orders/215,25,0,0
+1789122803308,25,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,361,158,2,2,null,25,33183,0
+1789122840065,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789122807384,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,32683,0
+1789122870145,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,3
+1789122836516,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33631,3
+1789122874289,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789122840085,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,34205,1
+1789122903564,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789122870158,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,33408,0
+1789122907073,23,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,372,158,2,2,http://localhost/api/products/7,23,0,0
+1789122874300,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,372,158,2,2,null,23,32773,0
+1789122937012,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,3
+1789122903584,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,33428,3
+1789122940050,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789122907097,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,32953,1
+1789122969735,23,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,381,158,2,2,http://localhost/api/products/8,23,0,0
+1789122937023,23,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,381,158,2,2,null,23,32712,0
+1789122973648,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789122940061,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33588,0
+1789123004015,15,POST /api/orders,200,OK,Users 1-1,text,true,,227,204,2,2,http://localhost/api/orders,15,0,2
+1789122969759,15,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,227,204,2,2,null,15,34257,2
+1789123007629,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789122973667,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,33963,2
+1789123036616,25,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,351,158,2,2,http://localhost/api/orders/216,25,0,0
+1789123004030,25,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,351,158,2,2,null,25,32586,0
+1789123039887,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,401,158,2,2,http://localhost/api/products/9,24,0,0
+1789123007640,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,401,158,2,2,null,24,32247,0
+1789123070848,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789123036643,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,34205,2
+1789123073416,10,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,10,0,1
+1789123039911,10,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,10,33506,1
+1789123103424,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789123070860,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,32564,0
+1789123106785,2527,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1467,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789123073427,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1467,161,2,2,null,2527,33358,0
+1789123136622,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789123103443,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,33180,2
+1789123140469,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,2
+1789123109312,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3005,31159,2
+1789123170074,23,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,406,158,2,2,http://localhost/api/products/2,23,0,0
+1789123136633,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,406,158,2,2,null,23,33442,0
+1789123173909,5020,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,5020,0,0
+1789123143476,5020,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,5020,30434,0
+1789123203542,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789123170098,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33445,2
+1789123206984,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789123178930,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,28054,2
+1789123237303,2527,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1467,161,2,2,http://localhost/api/reports/sales,2526,0,0
+1789123203554,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1467,161,2,2,null,2526,33749,0
+1789123240664,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789123206995,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33669,0
+1789123270885,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,3
+1789123239830,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3005,31056,3
+1789123273937,9,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,9,0,2
+1789123240682,9,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,9,33256,2
+1789123306833,23,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,408,158,2,2,http://localhost/api/products/3,23,0,0
+1789123273947,23,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,408,158,2,2,null,23,32886,0
+1789123303658,7019,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7019,0,0
+1789123273891,7019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,7019,29768,0
+1789123337629,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789123310678,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,26953,2
+1789123340765,14,POST /api/orders,200,OK,Users 1-2,text,true,,228,204,2,2,http://localhost/api/orders,14,0,1
+1789123306857,14,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,228,204,2,2,null,14,33910,1
+1789123370115,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789123337642,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,32472,0
+1789123373480,25,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,361,158,2,2,http://localhost/api/orders/217,25,0,0
+1789123340780,25,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,361,158,2,2,null,25,32699,0
+1789123403073,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789123370134,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,32939,2
+1789123407380,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789123373506,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33874,2
+1789123437418,23,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,412,158,2,2,http://localhost/api/products/4,23,0,0
+1789123403084,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,412,158,2,2,null,23,34334,0
+1789123440903,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789123407391,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33513,0
+1789123470672,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,3
+1789123437443,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33230,3
+1789123473962,10,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789123440922,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,10,33040,2
+1789123503611,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789123470685,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,32927,0
+1789123507305,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,373,158,2,2,http://localhost/api/products/6,23,0,0
+1789123473973,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,373,158,2,2,null,23,33333,0
+1789123536883,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789123503631,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,33252,2
+1789123539554,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,1
+1789123507329,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,32225,1
+1789123569943,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,381,158,2,2,http://localhost/api/products/8,24,0,0
+1789123536893,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,381,158,2,2,null,24,33050,0
+1789123573594,2526,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1479,161,2,2,http://localhost/api/reports/sales,2526,0,0
+1789123539565,2526,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1479,161,2,2,null,2526,34029,0
+1789123604213,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789123569967,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,34247,2
+1789123607332,3004,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3004,0,1
+1789123576120,3004,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3004,31212,1
+1789123637612,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789123604225,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,33387,0
+1789123640645,3018,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,3018,0,0
+1789123610336,3018,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,3018,30309,0
+1789123669986,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,12,0,4
+1789123637630,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,12,32357,4
+1789123673646,10,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,10,0,1
+1789123643664,10,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,10,29983,1
+1789123703176,23,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,381,158,2,2,http://localhost/api/products/8,23,0,0
+1789123669999,23,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,381,158,2,2,null,23,33177,0
+1789123707022,2526,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1479,161,2,2,http://localhost/api/reports/sales,2526,0,0
+1789123673657,2526,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1479,161,2,2,null,2526,33366,0
+1789123737627,16,POST /api/orders,200,OK,Users 1-1,text,true,,227,204,2,2,http://localhost/api/orders,16,0,3
+1789123703199,16,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,227,204,2,2,null,16,34428,3
+1789123739557,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,2
+1789123709549,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3005,30010,2
+1789123770349,23,GET /api/orders/{ORDER_ID},200,OK,Users 1-1,text,true,,351,158,2,2,http://localhost/api/orders/218,23,0,0
+1789123737643,23,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,351,158,2,2,null,23,32708,0
+1789123773422,7018,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7018,0,0
+1789123742564,7018,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,7018,30859,0
+1789123804125,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789123770375,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33752,2
+1789123806797,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789123780441,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,26356,2
+1789123837215,19,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789123804138,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,19,33078,0
+1789123840639,2527,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1478,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789123806808,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1478,161,2,2,null,2527,33832,0
+1789123870747,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,3
+1789123837235,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,33512,3
+1789123873456,3005,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3005,0,2
+1789123843167,3005,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3005,30290,2
+1789123903799,25,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,392,158,2,2,http://localhost/api/products/1,24,0,0
+1789123870759,25,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,392,158,2,2,null,24,33041,0
+1789123906762,7019,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7019,0,0
+1789123876462,7019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,7019,30302,0
+1789123936604,4,GET /api/health,200,OK,Users 1-1,text,true,,233,154,2,2,http://localhost/api/health,4,0,2
+1789123903824,4,01 Healthcheck,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,154,2,2,null,4,32780,2
+1789123939830,9,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,9,0,1
+1789123913783,9,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,9,26048,1
+1789123970198,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,3
+1789123936610,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33589,3
+1789123973231,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789123939840,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,33392,0
+1789124003932,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789123970210,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,33723,0
+1789124006996,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789123973250,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,33747,2
+1789124036894,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,1
+1789124003950,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,32943,1
+1789124039658,23,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,408,158,2,2,http://localhost/api/products/3,23,0,0
+1789124007007,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,408,158,2,2,null,23,32650,0
+1789124070431,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,393,158,2,2,http://localhost/api/products/5,24,0,0
+1789124036904,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,393,158,2,2,null,24,33529,0
+1789124073081,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789124039681,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33401,2
+1789124104004,12,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,3
+1789124070457,12,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33549,3
+1789124107374,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789124073093,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,34281,0
+1789124137466,2528,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1478,161,2,2,http://localhost/api/reports/sales,2528,0,0
+1789124104018,2528,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1478,161,2,2,null,2528,33448,0
+1789124140641,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789124107392,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,33249,2
+1789124170143,3004,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3004,0,1
+1789124139995,3004,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3004,30149,1
+1789124173889,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,408,158,2,2,http://localhost/api/products/3,24,0,0
+1789124140652,24,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,408,158,2,2,null,24,33237,0
+1789124206398,16,POST /api/orders,200,OK,Users 1-2,text,true,,228,204,2,2,http://localhost/api/orders,16,0,3
+1789124173913,16,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,228,204,2,2,null,16,32486,3
+1789124202919,7019,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7019,0,0
+1789124173148,7019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,7019,29771,0
+1789124236715,13,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,12,0,2
+1789124209940,13,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,12,26775,2
+1789124240970,26,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,361,158,2,2,http://localhost/api/orders/219,26,0,0
+1789124206415,26,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,361,158,2,2,null,26,34555,0
+1789124270418,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789124236728,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,33690,0
+1789124274259,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789124240996,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33263,2
+1789124303800,11,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789124270436,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,11,33364,2
+1789124307057,19,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,19,0,0
+1789124274270,19,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,19,32787,0
+1789124337018,23,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,372,158,2,2,http://localhost/api/products/7,23,0,0
+1789124303811,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,372,158,2,2,null,23,33207,0
+1789124339604,12,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,12,0,3
+1789124307076,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,12,32528,3
+1789124370043,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789124337042,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33003,2
+1789124373459,24,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,381,158,2,2,http://localhost/api/products/8,24,0,0
+1789124339616,24,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,381,158,2,2,null,24,33843,0
+1789124402897,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789124370056,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,32842,0
+1789124407147,16,POST /api/orders,200,OK,Users 1-2,text,true,,228,204,2,2,http://localhost/api/orders,16,0,2
+1789124373483,16,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,228,204,2,2,null,16,33664,2
+1789124436873,12,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,12,0,1
+1789124402916,12,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,12,33957,1
+1789124440672,24,GET /api/orders/{ORDER_ID},200,OK,Users 1-2,text,true,,352,158,2,2,http://localhost/api/orders/220,24,0,0
+1789124407163,24,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,352,158,2,2,null,24,33509,0
+1789124470521,24,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,401,158,2,2,http://localhost/api/products/9,24,0,0
+1789124436885,24,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,401,158,2,2,null,24,33636,0
+1789124473016,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789124440698,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,32318,2
+1789124504250,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789124470545,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,33706,2
+1789124507632,18,GET /api/auth/profile,200,OK,Users 1-2,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789124473027,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,233,293,2,2,null,18,34605,0
+1789124537453,2527,GET /api/reports/sales,200,OK,Users 1-1,text,true,,1480,161,2,2,http://localhost/api/reports/sales,2527,0,0
+1789124504262,2527,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,1480,161,2,2,null,2527,33192,0
+1789124540093,11,GET /api/products,200,OK,Users 1-2,text,true,,2314,156,2,2,http://localhost/api/products,11,0,2
+1789124507650,11,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,2314,156,2,2,null,11,32443,2
+1789124573070,23,GET /api/products/{product_id},200,OK,Users 1-2,text,true,,406,158,2,2,http://localhost/api/products/2,23,0,0
+1789124540104,23,04 Товар по ID,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,406,158,2,2,null,23,32966,0
+1789124570537,3007,GET /api/reports/slow?delay=3,200,OK,Users 1-1,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3007,0,3
+1789124539981,3007,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,257,168,2,2,null,3007,30556,3
+1789124606335,11,POST /api/auth/login,200,OK,Users 1-2,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789124573093,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,350,221,2,2,null,11,33242,2
+1789124604195,7018,POST /api/reports/generate?period=month,200,OK,Users 1-1,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,7018,0,0
+1789124573544,7018,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,275,197,2,2,null,7018,30652,0
+1789124637563,11,POST /api/auth/login,200,OK,Users 1-1,text,true,,350,221,2,2,http://localhost/api/auth/login,11,0,2
+1789124611215,11,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,350,221,2,2,null,11,26349,2
+1789124640989,2526,GET /api/reports/sales,200,OK,Users 1-2,text,true,,1480,161,2,2,http://localhost/api/reports/sales,2526,0,0
+1789124606346,2526,02 Отчёт sales,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,1480,161,2,2,null,2526,34645,0
+1789124669633,18,GET /api/auth/profile,200,OK,Users 1-1,text,true,,233,293,2,2,http://localhost/api/auth/profile,18,0,0
+1789124637575,18,02 Профиль,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,233,293,2,2,null,18,32058,0
+1789124672854,3006,GET /api/reports/slow?delay=3,200,OK,Users 1-2,text,true,,257,168,2,2,http://localhost/api/reports/slow?delay=3,3006,0,2
+1789124643517,3006,03 Отчёт slow,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,257,168,2,2,null,3006,29338,2
+1789124703102,10,GET /api/products,200,OK,Users 1-1,text,true,,2314,156,2,2,http://localhost/api/products,10,0,2
+1789124669651,10,03 Список товаров,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,2314,156,2,2,null,10,33453,2
+1789124706303,5019,POST /api/reports/generate?period=month,200,OK,Users 1-2,text,true,,275,197,2,2,http://localhost/api/reports/generate?period=month,5018,0,0
+1789124675861,5019,04 Генерация отчёта,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-2,,true,,275,197,2,2,null,5018,30442,0
+1789124711322,0,01 Авторизация,200,"Number of samples in transaction : 1, number of failing samples : 0",,,true,,0,0,0,0,null,0,0,0
+1789124736392,23,GET /api/products/{product_id},200,OK,Users 1-1,text,true,,408,158,1,1,http://localhost/api/products/3,23,0,0
+1789124703114,23,04 Товар,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,408,158,1,1,null,23,33278,0
+1789124754294,29,POST /api/orders,200,OK,Users 1-1,text,true,,228,204,1,1,http://localhost/api/orders,29,0,0
+1789124736415,29,05 Создать заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",Users 1-1,,true,,228,204,1,1,null,29,17879,0
+1789124754323,0,06 Получить заказ,200,"Number of samples in transaction : 1, number of failing samples : 0",,,true,,0,0,0,0,null,0,0,0

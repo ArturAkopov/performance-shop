@@ -32,7 +32,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <intProp name="HTTPSampler.connect_timeout">5000</intProp>
         <intProp name="HTTPSampler.response_timeout">60000</intProp>
         <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
@@ -45,7 +45,7 @@
         <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type">
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type" enabled="true">
         <collectionProp name="HeaderManager.headers">
           <elementProp name="" elementType="Header">
             <stringProp name="Header.name">Content-Type</stringProp>
@@ -54,7 +54,7 @@
         </collectionProp>
       </HeaderManager>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="users.csv">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="users.csv" enabled="true">
         <stringProp name="filename">users.csv</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
         <stringProp name="variableNames"></stringProp>
@@ -80,8 +80,8 @@
       <hashTree/>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Users">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-1747724399">
-            <stringProp name="1567">2</stringProp>
+          <collectionProp name="1731695109">
+            <stringProp name="51">3</stringProp>
             <stringProp name="0">0</stringProp>
             <stringProp name="1567">60</stringProp>
             <stringProp name="1508632">7200</stringProp>
@@ -95,7 +95,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
-        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer (Global RPS)" enabled="true">
+        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer (Global RPS)">
           <intProp name="calcMode">2</intProp>
           <stringProp name="throughput">${__P(target_throughput,3.6)}</stringProp>
         </ConstantThroughputTimer>
@@ -116,11 +116,11 @@
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01 Авторизация">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01 Авторизация" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/auth/login">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/auth/login" enabled="true">
               <stringProp name="HTTPSampler.path">/api/auth/login</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -147,7 +147,7 @@
                 <stringProp name="Assertion.custom_message"></stringProp>
               </ResponseAssertion>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="TOKEN">
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="TOKEN" enabled="true">
                 <stringProp name="JSONPostProcessor.referenceNames">TOKEN</stringProp>
                 <stringProp name="JSONPostProcessor.jsonPathExprs">$.access_token</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
@@ -156,11 +156,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="02 Профиль">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="02 Профиль" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/auth/profile">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/auth/profile" enabled="true">
               <stringProp name="HTTPSampler.path">/api/auth/profile</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -171,7 +171,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Authorization">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Authorization" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="" elementType="Header">
                     <stringProp name="Header.name">token</stringProp>
@@ -192,11 +192,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="03 Список товаров">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="03 Список товаров" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/products">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/products" enabled="true">
               <stringProp name="HTTPSampler.path">/api/products</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -219,11 +219,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04 Товар по ID">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04 Товар по ID" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/products/{product_id}">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/products/{product_id}" enabled="true">
               <stringProp name="HTTPSampler.path">/api/products/${product_id}</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -247,7 +247,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Б: Оформление заказа (20%)">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Б: Оформление заказа (20%)" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">0</intProp>
@@ -258,11 +258,11 @@
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01 Авторизация">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01 Авторизация" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/auth/login">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/auth/login" enabled="true">
               <stringProp name="HTTPSampler.path">/api/auth/login</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -279,7 +279,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="TOKEN">
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="TOKEN" enabled="true">
                 <stringProp name="JSONPostProcessor.referenceNames">TOKEN</stringProp>
                 <stringProp name="JSONPostProcessor.jsonPathExprs">$.access_token</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
@@ -302,7 +302,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/auth/profile">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/auth/profile" enabled="true">
               <stringProp name="HTTPSampler.path">/api/auth/profile</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -323,7 +323,7 @@
                 <stringProp name="Assertion.custom_message"></stringProp>
               </ResponseAssertion>
               <hashTree/>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Authorization">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Authorization" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="" elementType="Header">
                     <stringProp name="Header.name">token</stringProp>
@@ -338,7 +338,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/products">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/products" enabled="true">
               <stringProp name="HTTPSampler.path">/api/products</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -365,7 +365,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/products/{product_id}">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/products/{product_id}" enabled="true">
               <stringProp name="HTTPSampler.path">/api/products/${product_id}</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -392,7 +392,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/orders">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/orders" enabled="true">
               <stringProp name="HTTPSampler.path">/api/orders</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -409,7 +409,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="ORDER_ID">
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="ORDER_ID" enabled="true">
                 <stringProp name="JSONPostProcessor.referenceNames">ORDER_ID</stringProp>
                 <stringProp name="JSONPostProcessor.jsonPathExprs">$.order_id</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
@@ -428,11 +428,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="06 Получить заказ">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="06 Получить заказ" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/orders/{ORDER_ID}">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/orders/{ORDER_ID}" enabled="true">
               <stringProp name="HTTPSampler.path">/api/orders/${ORDER_ID}</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -456,7 +456,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="В: Отчёты (30%)">
+        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="В: Отчёты (30%)" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
           <intProp name="ThroughputController.maxThroughput">0</intProp>
@@ -467,7 +467,7 @@
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01 Авторизация">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01 Авторизация" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
@@ -507,11 +507,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="02 Отчёт sales">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="02 Отчёт sales" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/reports/sales">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/reports/sales" enabled="true">
               <stringProp name="HTTPSampler.path">/api/reports/sales</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -538,7 +538,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/reports/slow?delay=3">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET /api/reports/slow?delay=3" enabled="true">
               <stringProp name="HTTPSampler.path">/api/reports/slow?delay=3</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -561,11 +561,11 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04 Генерация отчёта">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04 Генерация отчёта" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/reports/generate?period=month">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /api/reports/generate?period=month" enabled="true">
               <stringProp name="HTTPSampler.path">/api/reports/generate?period=month</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -600,7 +600,7 @@
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01 Healthcheck">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01 Healthcheck" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
@@ -628,58 +628,45 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="Backend Listener">
-          <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="influxdbMetricsSender" elementType="Argument">
-                <stringProp name="Argument.name">influxdbMetricsSender</stringProp>
-                <stringProp name="Argument.value">org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="influxdbUrl" elementType="Argument">
-                <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://localhost:8086/write?db=jmeter</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="application" elementType="Argument">
-                <stringProp name="Argument.name">application</stringProp>
-                <stringProp name="Argument.value">performance_shop</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="measurement" elementType="Argument">
-                <stringProp name="Argument.name">measurement</stringProp>
-                <stringProp name="Argument.value">jmeter</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="summaryOnly" elementType="Argument">
-                <stringProp name="Argument.name">summaryOnly</stringProp>
-                <stringProp name="Argument.value">false</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="samplersRegex" elementType="Argument">
-                <stringProp name="Argument.name">samplersRegex</stringProp>
-                <stringProp name="Argument.value">.*</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="percentiles" elementType="Argument">
-                <stringProp name="Argument.name">percentiles</stringProp>
-                <stringProp name="Argument.value">90;95;99</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="testTitle" elementType="Argument">
-                <stringProp name="Argument.name">testTitle</stringProp>
-                <stringProp name="Argument.value">Performance Shop Test</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="eventTags" elementType="Argument">
-                <stringProp name="Argument.name">eventTags</stringProp>
-                <stringProp name="Argument.value"></stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="classname">org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient</stringProp>
-        </BackendListener>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>true</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>true</responseData>
+              <samplerData>true</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>true</responseHeaders>
+              <requestHeaders>true</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <fileName>true</fileName>
+              <hostname>true</hostname>
+              <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
         <hashTree/>
       </hashTree>
     </hashTree>
